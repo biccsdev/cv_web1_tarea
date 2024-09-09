@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victor Torres - Ingeniero de Software</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --gap: 2rem;
+            --gap-small: 1rem;
+            --font-title: 2.55rem;
+            --font-subtitle: 1.333rem;
+            --font-p: 1rem;
+            --color-primary: #7700ff;
+            --color-secondary: #6c757d;
+            --color-bg: #f8f9fa;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--color-bg);
+            color: var(--color-secondary);
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: var(--gap);
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: var(--gap);
+        }
+
+        .header-left img {
+            border-radius: 50%;
+            width: 80px;
+        }
+
+        .name {
+            color: var(--color-primary);
+            font-size: var(--font-title);
+            font-weight: 700;
+        }
+
+        .title {
+            font-size: var(--font-subtitle);
+            font-weight: 600;
+        }
+
+        .social-links {
+            display: flex;
+            gap: var(--gap-small);
+        }
+
+        .social-links a {
+            color: var(--color-secondary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: var(--gap-small);
+        }
+
+        .social-links a:hover {
+            color: var(--color-primary);
+        }
+
+        .section {
+            margin-bottom: var(--gap);
+        }
+
+        .section h2 {
+            color: var(--color-primary);
+            font-size: var(--font-subtitle);
+            font-weight: 600;
+            margin-bottom: var(--gap-small);
+        }
+
+        .skills-list {
+            list-style-type: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--gap-small);
+        }
+
+        .skills-list li {
+            background-color: #e9ecef;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+        }
+
+        .experience-item {
+            margin-bottom: var(--gap-small);
+        }
+
+        .experience-item h3 {
+            font-size: var(--font-p);
+            font-weight: 600;
+            margin-bottom: var(--gap-small);
+        }
+
+        .experience-item p {
+            font-size: var(--font-p);
+            margin-top: var(--gap-small);
+        }
+
+        .experience-item ul {
+            list-style-type: disc;
+            margin-left: 1.5rem;
+        }
+
+        .experience-item ul li {
+            font-size: var(--font-p);
+        }
+
+        @media (max-width: 770px) {
+            .pfp-container {
+                display: none;
+            }
+
+            .social-links {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-left">
+                <img src="https://pbs.twimg.com/profile_images/1731188121708957696/BPfF5tt3_400x400.jpg"
+                    alt="Foto de Perfil" class="pfp-container">
+                <div>
+                    <h1 class="name">Victor Torres</h1>
+                    <h2 class="title">Ingeniero de Software</h2>
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="https://x.com/itsbiccs" target="_blank">
+                    <img src="https://www.svgrepo.com/show/494287/twitter-round.svg" alt="Twitter" width="20">
+                    @itsbiccs
+                </a>
+                <a href="https://biccs.dev/" target="_blank">
+                    <img src="https://www.svgrepo.com/show/521261/web.svg" alt="Sitio Web" width="20">
+                    biccs.dev
+                </a>
+            </div>
+        </header>
+
+        <section class="section">
+            <h2>Habilidades</h2>
+            <ul class="skills-list">
+                <li>NodeJS</li>
+                <li>ExpressJS | NestJS</li>
+                <li>React | Vue | NextJS</li>
+                <li>Bases de datos descentralizadas (blockchain)</li>
+                <li>Bases de datos Relacionales | NoSQL</li>
+                <li>OpenSearch</li>
+                <li>GraphQL</li>
+                <li>Servidores | Nginx</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Experiencia</h2>
+            <div class="experience-item">
+                <h3>Desarrollador Backend | 2022-2023 | GeekBears</h3>
+                <ul>
+                    <li>Desarrollé y probé APIs para una aplicación web, siguiendo las mejores prácticas</li>
+                    <li>Trabajé con equipos de diferentes áreas, comunicándome de manera efectiva, de forma remota</li>
+                </ul>
+                <p>Typescript | NestJS | Mocha | Jest | GitLab | Docker | Postman</p>
+            </div>
+            <div class="experience-item">
+                <h3>Desarrollador Full Stack Desktop | 2023-Dic 2023 | DigioSoft</h3>
+                <ul>
+                    <li>Gestioné bases de datos de clientes y proporcioné soporte técnico</li>
+                    <li>Mejoré el rendimiento de la aplicación en un 70%, migrando la lógica de negocio del lado del
+                        cliente a procedimientos almacenados con SQL</li>
+                    <li>Desarrollé sistemas para crear archivos PDF y Excel con información de la base de datos</li>
+                    <li>Refactoricé el sistema de correo de la aplicación, simplificando el uso de la funcionalidad,
+                        brindando una mejor experiencia al usuario</li>
+                </ul>
+                <p>xBase | MySQL | MariaDB | Shell</p>
+            </div>
+            <div class="experience-item">
+                <h3>Desarrollador Full Stack Web | 2024-Presente | 3.Land</h3>
+                <ul>
+                    <li>Reduje la carga en el servidor principal causada por el sistema de búsqueda, implementé una
+                        instancia de OpenSearch para evitar llamadas innecesarias a la base de datos</li>
+                    <li>Mejoré el rendimiento de la aplicación web, implementando GraphQL para recuperar datos de la
+                        blockchain más rápido</li>
+                    <li>Desarrollo nuevas funcionalidades para nuestra aplicación web cada sprint</li>
+                    <li>Trabajo de manera eficiente con un equipo remoto, donde cada persona es responsable de sus
+                        actividades</li>
+                    <li>Responsable del desarrollo de las interfaces de usuario de la aplicación web</li>
+                    <li>Actualmente estoy desarrollando un Feed, con un algoritmo propio que recopila datos de la
+                        blockchain en tiempo real y los agrupa usando GraphQL</li>
+                </ul>
+                <p>NodeJS | VueJS | JavaScript | GraphQL | Blockchain | Linux | Git</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Educación</h2>
+            <p>Ingeniería en Software, Instituto Tecnológico de Sonora</p>
+        </section>
+    </div>
+</body>
+
+</html>
