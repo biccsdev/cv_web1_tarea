@@ -26,6 +26,10 @@
             padding: 0;
         }
 
+        iframe {
+            border-radius: 20px;
+        }
+
         body {
             font-family: 'Poppins', sans-serif;
             background-color: var(--color-bg);
@@ -86,6 +90,13 @@
 
         .section {
             margin-bottom: var(--gap);
+        }
+
+        .historia-container {
+            gap: var(--gap);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
         }
 
         .section h2 {
@@ -187,16 +198,32 @@
 
         <section class="section">
             <h2>Experiencia</h2>
+
             <div class="experience-item">
-                <h3>Desarrollador Backend | 2022-2023 | GeekBears</h3>
+                <h3>Desarrollador Full Stack Web | 2024-Presente | <a href="https://3.land/" target="_blank">3.Land</a>
+                </h3>
                 <ul>
-                    <li>Desarrollé y probé APIs para una aplicación web, siguiendo las mejores prácticas</li>
-                    <li>Trabajé con equipos de diferentes áreas, comunicándome de manera efectiva, de forma remota</li>
+                    <li>Reduje la carga en el servidor principal causada por el sistema de búsqueda, implementé una
+                        instancia de OpenSearch para evitar llamadas innecesarias a la base de datos</li>
+                    <li>Mejoré el rendimiento de la aplicación web, implementando GraphQL para recuperar datos de la
+                        blockchain más rápido</li>
+                    <li>Desarrolle un<a href="https://open.3.land/" target="_blank"> sdk y un cliente </a>open source
+                        que
+                        le permite a otros desarrolladores construir
+                        transacciones para subir datos a la blockchain
+                    </li>
+                    <li>Desarrollo nuevas funcionalidades para nuestra aplicación web cada sprint</li>
+                    <li>Trabajo de manera eficiente con un equipo remoto, donde cada persona es responsable de sus
+                        actividades</li>
+                    <li>Responsable del desarrollo de las interfaces de usuario de la aplicación web</li>
+                    <li>Actualmente estoy desarrollando un Feed, con un algoritmo propio que recopila datos de la
+                        blockchain en tiempo real y los agrupa usando GraphQL</li>
                 </ul>
-                <p>Typescript | NestJS | Mocha | Jest | GitLab | Docker | Postman</p>
+                <p>NodeJS | VueJS | JavaScript | GraphQL | Blockchain | Linux | Git</p>
             </div>
             <div class="experience-item">
-                <h3>Desarrollador Full Stack Desktop | 2023-Dic 2023 | DigioSoft</h3>
+                <h3>Desarrollador Full Stack Desktop | 2023-Dic 2023 | <a href="https://digiosoft.com.mx/"
+                        target="_blank">DigioSoft</a></h3>
                 <ul>
                     <li>Gestioné bases de datos de clientes y proporcioné soporte técnico</li>
                     <li>Mejoré el rendimiento de la aplicación en un 70%, migrando la lógica de negocio del lado del
@@ -208,28 +235,58 @@
                 <p>xBase | MySQL | MariaDB | Shell</p>
             </div>
             <div class="experience-item">
-                <h3>Desarrollador Full Stack Web | 2024-Presente | 3.Land</h3>
+                <h3>Desarrollador Backend | 2022-2023 | <a href="https://www.geekbears.com/"
+                        target="_blank">GeekBears</a></h3>
                 <ul>
-                    <li>Reduje la carga en el servidor principal causada por el sistema de búsqueda, implementé una
-                        instancia de OpenSearch para evitar llamadas innecesarias a la base de datos</li>
-                    <li>Mejoré el rendimiento de la aplicación web, implementando GraphQL para recuperar datos de la
-                        blockchain más rápido</li>
-                    <li>Desarrollo nuevas funcionalidades para nuestra aplicación web cada sprint</li>
-                    <li>Trabajo de manera eficiente con un equipo remoto, donde cada persona es responsable de sus
-                        actividades</li>
-                    <li>Responsable del desarrollo de las interfaces de usuario de la aplicación web</li>
-                    <li>Actualmente estoy desarrollando un Feed, con un algoritmo propio que recopila datos de la
-                        blockchain en tiempo real y los agrupa usando GraphQL</li>
+                    <li>Desarrollé y probé APIs para una aplicación web, siguiendo las mejores prácticas</li>
+                    <li>Trabajé con equipos de diferentes áreas, comunicándome de manera efectiva, de forma remota</li>
                 </ul>
-                <p>NodeJS | VueJS | JavaScript | GraphQL | Blockchain | Linux | Git</p>
+                <p>Typescript | NestJS | Mocha | Jest | GitLab | Docker | Postman</p>
             </div>
+            <section class="section">
+                <h2>Educación</h2>
+                <p>Ingeniería en Software, Instituto Tecnológico de Sonora</p>
+            </section>
         </section>
-
-        <section class="section">
-            <h2>Educación</h2>
-            <p>Ingeniería en Software, Instituto Tecnológico de Sonora</p>
-        </section>
+        <h2 style="color: #7700ff ;width: 100%;">Historial de Portafolios</h2>
     </div>
+    <section class="section historia-container">
+        <div>
+            <a href="https://biccs.dev/" target="_blank">
+                <h3>V4</h3>
+                <h5>VueJS</h5>
+            </a>
+            <iframe scrolling="no" id="mapa" width="600px" height="800px" src="https://biccs.dev/"></iframe>
+        </div>
+        <div>
+            <a href="https://biccs-dev-personal-site-v3.vercel.app/" target="_blank">
+                <h3>V3</h3>
+                <h5>NextJS</h5>
+            </a>
+            <iframe scrolling="no" id="mapa" width="600px" height="800px"
+                src="https://biccs-dev-personal-site-v3.vercel.app/"></iframe>
+        </div>
+        <div>
+            <a href="https://biccsdev.github.io/biccsdevPersonalSiteV2/" target="_blank">
+                <h3>V2</h3>
+                <h5>React Vanilla | Tailwind</h5>
+            </a>
+            <iframe scrolling="no" id="mapa" width="600px" height="800px"
+                src="https://biccsdev.github.io/biccsdevPersonalSiteV2/"></iframe>
+        </div>
+        <div>
+            <a href="https://victort555.github.io/biccsDevPersonalSite/" target="_blank">
+                <h3>V1</h3>
+                <h5>HTML | CSS | JS Vanilla</h5>
+            </a>
+            <iframe scrolling="no" id="mapa" width="600px" height="800px"
+                src="https://victort555.github.io/biccsDevPersonalSite/"></iframe>
+        </div>
+
+    </section>
+    <footer style="background-color: #7700ff; width: 100%; height: 55px; position: absolute; left: 0;">
+
+    </footer>
 </body>
 
 </html>
